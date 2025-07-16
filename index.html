@@ -157,7 +157,7 @@
             opacity: 0.9;
         }
 
-        .waitlist-form {
+        .waitlist-form form {
             display: flex;
             justify-content: center;
             gap: 20px;
@@ -199,7 +199,7 @@
                 width: 280px;
             }
 
-            .waitlist-form {
+            .waitlist-form form {
                 flex-direction: column;
                 align-items: center;
             }
@@ -253,7 +253,7 @@
     <section class="waitlist-section" id="waitlist">
         <div class="container">
             <h2>Be First to Know</h2>
-            <p>We're working hard to launch the app by late-2024 and want you to be the first to know when it's available.</p>
+            <p>We're working hard to launch the app by late-2025 and want you to be the first to know when it's available.</p>
             <div class="waitlist-form">
                 <input type="email" class="email-input" placeholder="Enter your email address" required>
                 <button class="btn btn-primary">Join Waitlist</button>
@@ -263,21 +263,11 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2024 BetSense Pty Ltd - All Rights Reserved.</p>
+            <p>&copy; 2025 BetSense Pty Ltd - All Rights Reserved.</p>
         </div>
     </footer>
 
     <script>
-        // Simple waitlist form handling
-        document.querySelector('.waitlist-form').addEventListener('submit', function(e) {
-            e.preventDefault();
-            const email = document.querySelector('.email-input').value;
-            if (email) {
-                alert('Thanks for joining our waitlist! We\'ll be in touch soon.');
-                document.querySelector('.email-input').value = '';
-            }
-        });
-
         // Smooth scrolling for anchor links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
