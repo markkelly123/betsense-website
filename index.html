@@ -6,6 +6,10 @@
     <title>BetSense - Play With Your Head, Not Over It</title>
     <meta name="description" content="BetSense - A safer gambling app that tracks your spending across all types of gambling to help you stay in control.">
     
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/assets/images/favicon.png">
+    <link rel="apple-touch-icon" href="/assets/images/favicon.png">
+
     <!-- Rybbit Analytics -->
     <script
         src="https://app.rybbit.io/api/script.js"
@@ -262,8 +266,11 @@
             <h2>Be First to Know</h2>
             <p>We're working hard to launch the app by late-2025 and want you to be the first to know when it's available.</p>
             <div class="waitlist-form">
-                <input type="email" class="email-input" placeholder="Enter your email address" required>
-                <button class="btn btn-primary">Join Waitlist</button>
+                <form action="https://formspree.io/f/mgvzepog" method="POST" style="display: flex; justify-content: center; gap: 20px;">
+                    <input type="email" name="email" class="email-input" placeholder="Enter your email address" required>
+                    <button type="submit" class="btn btn-primary">Join Waitlist</button>
+                    <input type="hidden" name="_subject" value="New BetSense Waitlist Signup">
+                </form>
             </div>
         </div>
     </section>
